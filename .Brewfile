@@ -10,7 +10,7 @@ brew "zsh-syntax-highlighting"
 brew "gh"
 brew "glow"
 brew "yadm"
-
+brew "exa"
 brew "git"
 brew "jq"
 brew "fzf"
@@ -29,7 +29,8 @@ cask "whatsapp"
 
 # Fonts
 cask 'font-meslo-lg-nerd-font'
-
+cask "font-meslo-for-powerline"
+cask "font-fira-mono-nerd-font"
 
 # AppStore
 brew "mas"
