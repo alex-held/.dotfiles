@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Copy README for git repo to $HOME so that the github repo README will be updated
+# post-commit moves the README.md back so as to not pollute $HOME
+
+cd || exit $?
+
+declare -a files
+files=(`cat ~/.config/yadm/hooks/files`)
+
+for file in "${files[@]}"; do 
+    cp "~/.config/yadm/${file}" "~/${file}"
+    yadm add -f "~/${file}"
+done

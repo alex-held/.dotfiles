@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Moves the README.md downloaded from github back to ~/.config/yadm/README.md
+# so that changes made through the web interacted stay updated locally
+
+cd || exit $?
+
+declare -a files
+files=(`cat ~/.config/yadm/hooks/files`)
+
+for file in "${files[@]}"; do
+    [[ -f "~/$file" ]] && mv "~/$file" "~/.config/yadm/$file"
+done
