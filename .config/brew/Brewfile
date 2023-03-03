@@ -1,0 +1,20 @@
+# Brews
+brew "zsh"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+brew "gh"
+brew "glow"
+
+brew "git"
+brew "jq"
+brew "fzf"
+
+# Casks
+cask "google-chrome"
+cask "iterm2" 
+cask "1password"
+cask "alfred"
+cask "visual-studio-code"
+
+# AppStore
+brew "mas"
