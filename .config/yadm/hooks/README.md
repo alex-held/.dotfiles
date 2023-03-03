@@ -3,7 +3,6 @@
 [Thanks seanbreckenridge](https://raw.githubusercontent.com/seanbreckenridge/dotfiles/master/.config/yadm/yadm-with-README.md)
 
 
-
 Since yadm acts directly on the `$HOME` directory instead of symlinking,
 in order to have a README for this repo without polluting `$HOME` with a `README.md`
 file, this uses hooks located at [.config/yadm/hooks](hooks) to temporarily copy
