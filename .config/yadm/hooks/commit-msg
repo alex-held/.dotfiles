@@ -3,4 +3,11 @@
 # Delete the README.md since the original at ~/.config/yadm/README.md still exists
 
 cd || exit $?
-[[ -f ~/README.md ]] && rm ~/README.md
+
+
+declare -a files
+files=(`cat ~/.config/yadm/hooks/files`)
+
+for file in "${files[@]}"; do
+    [[ -f "$HOME/$file" ]] && mv "$HOME/$file" "$HOME/.config/yadm/$file"
+done

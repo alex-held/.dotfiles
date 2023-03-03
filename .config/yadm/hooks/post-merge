@@ -8,5 +8,5 @@ declare -a files
 files=(`cat ~/.config/yadm/hooks/files`)
 
 for file in "${files[@]}"; do
-    [[ -f "~/$file" ]] && mv "~/$file" "~/.config/yadm/$file"
+    [[ -f "$HOME/$file" ]] && mv "$HOME/$file" "$HOME/.config/yadm/$file"
 done

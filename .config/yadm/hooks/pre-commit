@@ -8,6 +8,8 @@ declare -a files
 files=(`cat ~/.config/yadm/hooks/files`)
 
 for file in "${files[@]}"; do 
-    cp "~/.config/yadm/${file}" "~/${file}"
-    yadm add -f "~/${file}"
+    echo "copy $HOME/.config/yadm/${file} -> $HOME/${file}"
+    ls "$HOME/.config/yadm/"
+    cp "$HOME/.config/yadm/${file}" "$HOME/${file}"
+    yadm add -f "$HOME/${file}"
 done
