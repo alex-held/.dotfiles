@@ -27,6 +27,7 @@ cask "alfred"
 cask "visual-studio-code"
 cask "signal"
 cask "whatsapp"
+cask "evernote"
 
 # Fonts
 cask 'font-meslo-lg-nerd-font'
@@ -36,4 +37,5 @@ cask "font-fira-mono-nerd-font"
 # AppStore
 brew "mas"
 
-mas  "Telegram", id: 747648890
+mas "Telegram", id: 747648890
+mas "Xcode", id: 497799835
