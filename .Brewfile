@@ -16,6 +16,7 @@ brew "git"
 brew "jq"
 brew "fzf"
 brew "bat"
+brew "yarn"
 
 brew "powerlevel10k"
 

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@angular/cli": "^15.2.1",
+    "create-next-app": "^13.2.3"
+  }
+}
