@@ -11,3 +11,5 @@
 
 [sequence]
 	editor = interactive-rebase-tool
+[init]
+	defaultBranch = master
